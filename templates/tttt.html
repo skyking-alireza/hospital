@@ -1,0 +1,289 @@
+{% load static %}
+<html>
+<head>
+</head>
+<body>
+<div class="tab-pane active" id="post-object-form">
+
+    <form action="/users/viewuser" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate="">
+        <fieldset>
+            <input type="hidden" name="csrfmiddlewaretoken"
+                   value="npaEwF7pbHBVoeAelh0ETdI3076hTeJIe8VLaoVfp3M2UqC47FnXyIGGlsDxVvnQ">
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    Profileimage
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="profileimage" type="file" value="">
+
+
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    Password
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="password" class="form-control" type="text" value="">
+
+
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    Last login
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="last_login" class="form-control" type="datetime-local" value="">
+
+
+                </div>
+            </div>
+
+
+            <div class="form-group horizontal-checkbox ">
+
+                <label class="col-sm-2 control-label ">
+                    Superuser status
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input type="checkbox" name="is_superuser" value="true">
+
+
+                    <span class="help-block">Designates that this user has all permissions without explicitly assigning them.</span>
+
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    Username
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="username" class="form-control" type="text" value="">
+
+
+                    <span class="help-block">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>
+
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    First name
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="first_name" class="form-control" type="text" value="">
+
+
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    Last name
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="last_name" class="form-control" type="text" value="">
+
+
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+
+                <label class="col-sm-2 control-label ">
+                    Email address
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input name="email" class="form-control" type="email" value="">
+
+
+                </div>
+            </div>
+
+
+            <div class="form-group horizontal-checkbox ">
+
+                <label class="col-sm-2 control-label ">
+                    Staff status
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input type="checkbox" name="is_staff" value="true">
+
+
+                    <span class="help-block">Designates whether the user can log into this admin site.</span>
+
+                </div>
+            </div>
+
+
+            <div class="form-group horizontal-checkbox ">
+
+                <label class="col-sm-2 control-label ">
+                    Active
+                </label>
+
+
+                <div class="col-sm-10">
+                    <input type="checkbox" name="is_active" value="true">
+
+
+                    <span class="help-block">Designates whether this user should be treated as active. Unselect this instead of deleting accounts.</span>
+
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Date joined
+                </label>
+                <div class="col-sm-10">
+                    <input name="date_joined" class="form-control" type="datetime-local" value="">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Nationalcode
+                </label>
+                <div class="col-sm-10">
+                    <input name="nationalcode" class="form-control" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Medicalsystemnumber
+                </label>
+                <div class="col-sm-10">
+                    <input name="Medicalsystemnumber" class="form-control" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    ((1, 'قلب و عروق'), (2, 'متخصص زنان زایمان و نازایی'), (3, 'چشم'), (4, 'پوست و مو'), (5, 'کلیه و
+                    مجاری ادراری'), (6, 'ارتوپدی'))
+                </label>
+                <div class="col-sm-10">
+                    <input name="specialties" class="form-control" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Workexperience
+                </label>
+                <div class="col-sm-10">
+                    <input name="Workexperience" class="form-control" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Address
+                </label>
+                <div class="col-sm-10">
+                    <textarea name="address" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Phone
+                </label>
+                <div class="col-sm-10">
+                    <input name="phone" class="form-control" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 control-label ">
+                    Birthdate
+                </label>
+                <div class="col-sm-10">
+                    <input name="birthdate" class="form-control" type="text" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label ">
+                    Groups
+                </label>
+                <div class="col-sm-10">
+                    <select multiple="" disabled="" class="form-control" name="groups">
+                        <option>No items to select.</option>
+                    </select>
+                    <span class="help-block">The groups this user belongs to. A user will get all permissions granted to each of their groups.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label ">
+                    User permissions
+                </label>
+                <div class="col-sm-10">
+                    <select multiple="" class="form-control" name="user_permissions">
+                        <option value="21">accounts | user | Can add user</option>
+                        <option value="22">accounts | user | Can change user</option>
+                        <option value="23">accounts | user | Can delete user</option>
+                        <option value="24">accounts | user | Can view user</option>
+                        <option value="1">admin | log entry | Can add log entry</option>
+                        <option value="2">admin | log entry | Can change log entry</option>
+                        <option value="3">admin | log entry | Can delete log entry</option>
+                        <option value="4">admin | log entry | Can view log entry</option>
+                        <option value="9">auth | group | Can add group</option>
+                        <option value="10">auth | group | Can change group</option>
+                        <option value="11">auth | group | Can delete group</option>
+                        <option value="12">auth | group | Can view group</option>
+                        <option value="5">auth | permission | Can add permission</option>
+                        <option value="6">auth | permission | Can change permission</option>
+                        <option value="7">auth | permission | Can delete permission</option>
+                        <option value="8">auth | permission | Can view permission</option>
+                        <option value="13">contenttypes | content type | Can add content type</option>
+                        <option value="14">contenttypes | content type | Can change content type</option>
+                        <option value="15">contenttypes | content type | Can delete content type</option>
+                        <option value="16">contenttypes | content type | Can view content type</option>
+                        <option value="17">sessions | session | Can add session</option>
+                        <option value="18">sessions | session | Can change session</option>
+                        <option value="19">sessions | session | Can delete session</option>
+                        <option value="20">sessions | session | Can view session</option>
+                    </select>
+                    <span class="help-block">Specific permissions for this user.</span>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="btn btn-primary js-tooltip" title=""
+                        data-original-title="Make a POST request on the Viewuser resource">POST
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
